@@ -1,5 +1,5 @@
-# OC_log_viz
-Landing page for testing JS visualizations about indexed records in OpenCitations and usage of OpenCitations services.
+# statistics-view
+A visual interface to represent a statistical overview regarding the usages of the OpenCitations services
 
 ### References
 <ol>
