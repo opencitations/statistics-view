@@ -41,7 +41,7 @@ $(window).load(function () {
       console.log(error);
     })
     .then(function () {
-      // sottrai 12 mesi dall'ultima data
+      // -12 months from last date
       // reference: modificato da https://bobbyhadz.com/blog/javascript-date-subtract-months#:~:text=To%20subtract%20months%20from%20a,the%20value%20for%20the%20date.
       function subtractMonths(numOfMonths, date) {
         ybf_date = new Date(date)
