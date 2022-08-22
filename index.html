@@ -136,7 +136,6 @@
 
 
       <h2 id="used_services">Usage of Services</h2>
-cs
       <p>This bar chart shows a report about the <b>monthly aggregate count of http requests, both for the usage of OpenCitations Application Programming Interfaces and
         the Datasets consultations</b>.
         <a href="#bar_selector">Scroll down</a> to customize the settings and update the visualization.
@@ -186,7 +185,13 @@ cs
   <script>
       document.getElementById("loading").style = "display: block; width: 100vw; height: 100vh; position: fixed; top:0; left:0; display: flex;justify-content: center;";
       document.getElementById("page_cont").style = "display: none;";
+
+      //comment these two lines if you do not want auto generation of the chart
+      document.getElementById("Invio").style = "display: none;";
+      document.getElementById("Invio_1").style = "display: none;";
+
       document.getElementsByTagName("footer")[0].style = "display: none;"
+
   </script>
 
 </body>
