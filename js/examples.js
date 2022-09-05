@@ -84,7 +84,7 @@ $(window).load(function () {
 
       let default_query_array = get_default_query_array(yearbefore_date, last_date);
 
-      months = { "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun", "07": "Lug", "08": "Aug", "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec" };
+      months = { "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun", "07": "Jul", "08": "Aug", "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec" };
 
       requests_list = []
       for (i = 0; i < default_query_array.length; i++) {
@@ -154,7 +154,7 @@ $(window).load(function () {
           result["api_requests"] = Number(api_req);
           result["dataset_requests"] = Number(dataset_req);
 
-          key_name = months[date[2]] + "_" + date[1];
+          key_name = months[date[2]] + " " + date[1];
           dict_name[key_name] = result;
 
 
@@ -296,7 +296,7 @@ $(window).load(function () {
           ind_rec = prom_to_dict.opencitations_indexed_records
           let result = {};
           result["indexed_records"] = Number(ind_rec);
-          key_name = months[date[2]] + "_" + date[1];
+          key_name = months[date[2]] + " " + date[1];
           dict_name_1[key_name] = result;
 
 
@@ -532,7 +532,7 @@ $(window).load(function () {
           }
 
           let dict_name = {};
-          months = { "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun", "07": "Lug", "08": "Aug", "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec" };
+          months = { "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun", "07": "Jul", "08": "Aug", "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec" };
 
           // Parallel requests: for each request, prometheus data are stored in a dictionary.
           // The dictionary is filtered, so to keep the relevant data only (i.e., indexed records number and data about services usage)
@@ -592,7 +592,7 @@ $(window).load(function () {
               result["api_requests"] = Number(api_req);
               result["dataset_requests"] = Number(dataset_req);
 
-              key_name = months[date[2]] + "_" + date[1];
+              key_name = months[date[2]] + " " + date[1];
               dict_name[key_name] = result;
 
 
@@ -727,7 +727,7 @@ $(window).load(function () {
           }
 
           let dict_name_1 = {};
-          months = { "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun", "07": "Lug", "08": "Aug", "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec" };
+          months = { "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun", "07": "Jul", "08": "Aug", "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec" };
 
           // Parallel requests: for each request, prometheus data are stored in a dictionary.
           // The dictionary is filtered, so to keep the relevant data only (i.e., indexed records number and data about services usage)
@@ -783,7 +783,7 @@ $(window).load(function () {
 
               let result = {};
               result["indexed_records"] = Number(ind_rec);
-              key_name = months[date[2]] + "_" + date[1];
+              key_name = months[date[2]] + " " + date[1];
               dict_name_1[key_name] = result;
 
 
